@@ -6,7 +6,7 @@ import java.io.Reader;
 public class ReaderPolimorfico {
 	static final char CR = '\r'; // x'0D' Carriage Return
 	static final char LF = '\n'; // x'0A' Line Feed
-	static final int EOF = -1;
+	static final int EOF = -1; // End Of File
 	
 	
 	// Con questo metodo posso stampare caratteri derivanti da String, char[], File
@@ -20,14 +20,8 @@ public class ReaderPolimorfico {
 				continue;
 			}
 			sb.append((char) c);
-			
-			
 		}
 		
-		
-		
 		return sb.toString();
-		
-		
 	}
 }

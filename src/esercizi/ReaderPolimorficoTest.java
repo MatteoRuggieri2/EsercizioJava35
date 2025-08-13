@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 class ReaderPolimorficoTest {
 	
 	static ReaderPolimorfico rp;
-	String stringInput = "Stringa di test";
-	char[] charsArrayInput = {'T', 'e', 's', 't'};
+	final String stringInput = "Stringa di test";
+	final char[] charsArrayInput = {'T', 'e', 's', 't'};
 	File fileInput = new File("src/text_files/input_file.txt");
 
 	@BeforeAll
