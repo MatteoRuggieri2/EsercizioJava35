@@ -10,7 +10,7 @@ public class ReaderPolimorfico {
 	
 	
 	// Con questo metodo posso stampare caratteri derivanti da String, char[], File
-	public String stampa(Reader rd) throws IOException {
+	public String print(Reader rd) throws IOException {
 		
 		int c = 0;
 		StringBuffer sb = new StringBuffer();

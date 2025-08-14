@@ -23,7 +23,7 @@ class ReaderPolimorficoTest {
 	void testStampaStringa() throws IOException {
 		Reader rdString = new StringReader(this.stringInput);
 		
-		String str = rp.stampa(rdString);
+		String str = rp.print(rdString);
 		assertTrue(str.equals(this.stringInput));
 	}
 	
@@ -31,7 +31,7 @@ class ReaderPolimorficoTest {
 	void testStampaCharArray() throws IOException {
 		Reader rdCharArray = new CharArrayReader(this.charsArrayInput);
 		
-		String str = rp.stampa(rdCharArray);
+		String str = rp.print(rdCharArray);
 		assertTrue(str.equals("Test"));
 	}
 	
@@ -39,7 +39,7 @@ class ReaderPolimorficoTest {
 	void testStampaFile() throws IOException {
 		Reader rdFile = new FileReader(this.fileInput);
 		
-		String str = rp.stampa(rdFile);
+		String str = rp.print(rdFile);
 		assertTrue(str.equals("Strisssseeds"));
 	}
 
