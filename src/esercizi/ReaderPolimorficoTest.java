@@ -20,26 +20,26 @@ class ReaderPolimorficoTest {
 	}
 
 	@Test
-	void testStampaStringa() throws IOException {
+	void testStringReader() throws IOException {
 		Reader rdString = new StringReader(this.stringInput);
 		
-		String str = rp.print(rdString);
+		String str = rp.read(rdString);
 		assertTrue(str.equals(this.stringInput));
 	}
 	
 	@Test
-	void testStampaCharArray() throws IOException {
+	void testCharArrayReader() throws IOException {
 		Reader rdCharArray = new CharArrayReader(this.charsArrayInput);
 		
-		String str = rp.print(rdCharArray);
+		String str = rp.read(rdCharArray);
 		assertTrue(str.equals("Test"));
 	}
 	
 	@Test
-	void testStampaFile() throws IOException {
+	void testFileReader() throws IOException {
 		Reader rdFile = new FileReader(this.fileInput);
 		
-		String str = rp.print(rdFile);
+		String str = rp.read(rdFile);
 		assertTrue(str.equals("Strisssseeds"));
 	}
 
