@@ -40,7 +40,7 @@ class ReaderPolimorficoTest {
 		Reader rdFile = new FileReader(this.fileInput);
 		
 		String str = rp.read(rdFile);
-		assertTrue(str.equals("Strisssseeds"));
+		assertTrue(str.equals("MatteoRuggieri1234ds"));
 	}
 
 }
