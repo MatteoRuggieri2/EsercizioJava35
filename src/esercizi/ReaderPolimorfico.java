@@ -9,7 +9,9 @@ public class ReaderPolimorfico {
 	static final int EOF = -1; // End Of File
 	
 	
-	// Con questo metodo posso stampare caratteri derivanti da String, char[], File
+	/* Con questo metodo posso leggere caratteri derivanti da String, char[], File.
+	Ritorna una stringa con tutti i caratteri contenenti nel reader, eliminando 
+	carriage return, line feed e space. */
 	public String print(Reader rd) throws IOException {
 		
 		int c = 0;
