@@ -12,7 +12,7 @@ public class ReaderPolimorfico {
 	/* Con questo metodo posso leggere caratteri derivanti da String, char[], File.
 	Ritorna una stringa con tutti i caratteri contenenti nel reader, eliminando 
 	carriage return, line feed e space. */
-	public String print(Reader rd) throws IOException {
+	public String read(Reader rd) throws IOException {
 		
 		int c = 0;
 		StringBuffer sb = new StringBuffer();
